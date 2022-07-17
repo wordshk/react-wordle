@@ -260,6 +260,17 @@ function App() {
         setIsSettingsModalOpen={setIsSettingsModalOpen}
       />
       <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
+        <div className="flex justify-center mb-2">
+          (
+          <a
+            href="https://words.hk/static/bopomofo-wordle/index2.html"
+            className="underline"
+            style={{ color: '#88A' }}
+          >
+            舊版本按此
+          </a>
+          )
+        </div>
         <div className="pb-6 grow">
           <Grid
             solution={solution}
