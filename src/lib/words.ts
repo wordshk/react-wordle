@@ -1,5 +1,6 @@
 import { WORDS } from '../constants/wordlist'
 import { VALID_GUESSES } from '../constants/validGuesses'
+import { INDEX_OFFSET } from '../constants/settings'
 import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
@@ -109,7 +110,7 @@ export const getIndex = (today: Date) => {
     start.setDate(start.getDate() + periodInDays)
   } while (start <= today)
 
-  return index
+  return index + INDEX_OFFSET
 }
 
 export const getWordOfDay = (index: number) => {
