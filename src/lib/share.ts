@@ -1,7 +1,7 @@
 import { getGuessStatuses } from './statuses'
 import { solutionIndex, unicodeSplit } from './words'
 import { GAME_TITLE } from '../constants/strings'
-import { MAX_CHALLENGES } from '../constants/settings'
+import { MAX_CHALLENGES, SITE_URL } from '../constants/settings'
 import { UAParser } from 'ua-parser-js'
 
 const webShareApiDeviceTypes: string[] = ['mobile', 'smarttv', 'wearable']
@@ -26,7 +26,7 @@ export const shareStatus = (
       solution,
       guesses,
       getEmojiTiles(isDarkMode, isHighContrastMode)
-    )
+    ) + '\n遊戲連結：' + SITE_URL
 
   const shareData = { text: textToShare }
 
