@@ -7,5 +7,5 @@ export const ENABLE_MIGRATE_STATS = true
 export const BLOWFISH_KEY = 'XCquahSIK#tHQ&lg*8ES2dSz$3BW^E'
 export const BLOWFISH_IV = '#45xMf^W'
 export const SUPP_WIDTH = 80
-export const SITE_URL = 'https://bopomofogame.com'
+export const SITE_URL = 'http://bopomofogame.com'
 export const INDEX_OFFSET = 200 // artificially sync up with old version
