@@ -271,7 +271,7 @@ function App() {
           </a>
           )
         </div>
-        <div className="pb-6 grow">
+        <div className="pb-6">
           <Grid
             solution={solution}
             guesses={guesses}
