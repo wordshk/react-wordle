@@ -1,6 +1,8 @@
 import { getGuessStatuses } from '../../lib/statuses'
 import { Cell } from './Cell'
 import { unicodeSplit } from '../../lib/words'
+import { VALID_GUESSES } from '../../constants/validGuesses'
+import { SUPP_WIDTH } from '../../constants/settings'
 
 type Props = {
   solution: string
@@ -24,6 +26,7 @@ export const CompletedRow = ({ solution, guess, isRevealing }: Props) => {
           isCompleted
         />
       ))}
+    <span style={{maxWidth: SUPP_WIDTH, width: SUPP_WIDTH}}>{VALID_GUESSES[guess]}</span>
     </div>
   )
 }

@@ -6,3 +6,4 @@ export const DISCOURAGE_INAPP_BROWSERS = true
 export const ENABLE_MIGRATE_STATS = true
 export const BLOWFISH_KEY = 'XCquahSIK#tHQ&lg*8ES2dSz$3BW^E'
 export const BLOWFISH_IV = '#45xMf^W'
+export const SUPP_WIDTH = 80

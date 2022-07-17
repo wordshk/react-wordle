@@ -1,5 +1,6 @@
 import { Cell } from './Cell'
 import { solution, unicodeSplit } from '../../lib/words'
+import { SUPP_WIDTH } from '../../constants/settings'
 
 type Props = {
   guess: string
@@ -19,6 +20,7 @@ export const CurrentRow = ({ guess, className }: Props) => {
       {emptyCells.map((_, i) => (
         <Cell key={i} />
       ))}
+    <span style={{maxWidth: SUPP_WIDTH, width: SUPP_WIDTH}}>&nbsp;</span>
     </div>
   )
 }
