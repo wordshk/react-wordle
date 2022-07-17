@@ -1,4 +1,4 @@
-export const VALID_GUESSES = {
+export const VALID_GUESSES : any = {
 "ㄅㄚㄅㄟㄗ":"八輩子",
 "ㄅㄚㄅㄧㄠ":"八表",
 "ㄅㄚㄅㄧㄥ":"把柄/八病",
