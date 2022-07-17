@@ -259,7 +259,7 @@ function App() {
         setIsStatsModalOpen={setIsStatsModalOpen}
         setIsSettingsModalOpen={setIsSettingsModalOpen}
       />
-      <div className="px-1 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
+      <div className="px-1 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col">
         <div className="flex justify-center mb-2">
           (
           <a
