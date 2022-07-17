@@ -60,7 +60,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        這是開源版本遊戲 - <a href="https://github.com/cwackerfuss/react-wordle" className="underline font-bold" >英文版的源代碼在這裡</a> - <a href="https://github.com/wordshk/react-wordle" className="underline font-bold" >注音版的源代碼</a>。<br />另外，<a href="https://words.hk/static/bopomofo-wordle/index2.html" className="underline" >舊版注音Wordle在這裡</a>
+        這是開源遊戲 - <a href="https://github.com/cwackerfuss/react-wordle" className="underline font-bold" >英文版的源代碼在這裡</a> - <a href="https://github.com/wordshk/react-wordle" className="underline font-bold" >注音版的源代碼</a>。<br />另外，<a href="https://words.hk/static/bopomofo-wordle/index2.html" className="underline" >舊版注音Wordle在這裡</a>
       </p>
     </BaseModal>
   )
