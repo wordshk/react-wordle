@@ -17,7 +17,7 @@ type Props = {
 export const Key = ({
   children,
   status,
-  width = 40,
+  width = 25,
   value,
   onClick,
   isRevealing,
@@ -46,7 +46,7 @@ export const Key = ({
   const styles = {
     transitionDelay: isRevealing ? `${keyDelayMs}ms` : 'unset',
     width: `${width}px`,
-    height: '58px',
+    height: '40px',
   }
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
