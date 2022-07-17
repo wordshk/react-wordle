@@ -17,13 +17,19 @@ type Props = {
 export const Key = ({
   children,
   status,
-  width = 25,
+  width = 35,
   value,
   onClick,
   isRevealing,
 }: Props) => {
   const keyDelayMs = REVEAL_TIME_MS * solution.length
   const isHighContrast = getStoredIsHighContrastMode()
+
+  if (value[0] === ' ') {
+  return (
+    <span style={{width:width}}></span>
+  )
+  }
 
   const classes = classnames(
     'flex items-center justify-center rounded mx-0.5 text-xs font-bold cursor-pointer select-none dark:text-white',
@@ -46,7 +52,7 @@ export const Key = ({
   const styles = {
     transitionDelay: isRevealing ? `${keyDelayMs}ms` : 'unset',
     width: `${width}px`,
-    height: '40px',
+    height: '35px',
   }
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
