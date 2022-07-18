@@ -26,7 +26,7 @@ export const CompletedRow = ({ solution, guess, isRevealing }: Props) => {
           isCompleted
         />
       ))}
-    <span style={{maxWidth: SUPP_WIDTH, width: SUPP_WIDTH}}>{VALID_GUESSES[guess]}</span>
+    <span className="dark:text-white" style={{maxWidth: SUPP_WIDTH, width: SUPP_WIDTH}}>{VALID_GUESSES[guess]}</span>
     </div>
   )
 }
